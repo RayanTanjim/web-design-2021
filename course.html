@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University website Design - Easy Tutorials </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">  
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" ></a>
+            <div class="nav-links" id="navLinks">
+                <span class="material-icons" onclick="hideMenu()">
+                    close
+                    </span>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <span class="material-icons" onclick="showMenu()">menu</span>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+
+    <!------- Course -------->
+
+    <section class="course">
+        <h1>Course We offer</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, iure voluptatum consequatur et fugit voluptate asperiores labore animi? Ratione fugiat ullam quod magni ex! Repellendus!</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, iure voluptatum consequatur et fugit voluptate asperiores labore animi? Ratione fugiat ullam quod magni ex! Repellendus!</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, iure voluptatum consequatur et fugit voluptate asperiores labore animi? Ratione fugiat ullam quod magni ex! Repellendus!</p>
+            </div>
+        </div>
+    </section>
+
+<!------------ facilities ---------------->
+
+<section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="img/library.png" alt="">
+            <h3>World Class Library</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="img/basketball.png" alt="">
+            <h3>Largest Play Ground</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="img/cafeteria.png" alt="">
+            <h3>Tasty and Healthy Food</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+</section>
+  
+<!------Footer------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae maiores aut fugit quo ratione voluptatum <br>cupiditate dolorem atque. Qui consectetur illo praesentium provident quo.</p>
+    <div class="icons">
+        <span class="material-icons">facebook</span>
+        <span class="material-icons">add_to_drive</span>
+        <span class="material-icons">wb_cloudy</span>
+        <span class="material-icons">duo</span>
+    </div>
+    <p>made with <span class="material-icons">favorite_border</span> by Rayan Tanzim</p>
+</section>
+
+<!----JavaScript for Toggle Menu---->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

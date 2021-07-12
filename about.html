@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University website Design - Easy Tutorials </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" ></a>
+            <div class="nav-links" id="navLinks">
+                <span class="material-icons" onclick="hideMenu()">
+                    close
+                    </span>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <span class="material-icons" onclick="showMenu()">menu</span>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!------- about us content--------->
+
+    <section class="about-us">
+
+        <div class="row">
+           <div class="about-col">
+               <h1>We are the world's largest univercity</h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, quis velit saepe facere perspiciatis totam enim fuga in vitae autem, mollitia harum. Nihil dolores expedita cumque aperiam ut? Dolorum nulla culpa eligendi consectetur! Quisquam eos ipsum magnam ex eligendi omnis laboriosam, id atque dolorum fugit. Quos voluptate dolores aspernatur fugiat, labore autem enim vel? Explicabo, commodi? At incidunt eius libero.</p>
+               <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+           </div>
+           <div class="about-col">
+               <img src="img/about.jpg" alt="">
+           </div>
+        </div>
+    </section>
+
+<!------Footer------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae maiores aut fugit quo ratione voluptatum <br>cupiditate dolorem atque. Qui consectetur illo praesentium provident quo.</p>
+    <div class="icons">
+        <span class="material-icons">facebook</span>
+        <span class="material-icons">add_to_drive</span>
+        <span class="material-icons">wb_cloudy</span>
+        <span class="material-icons">duo</span>
+    </div>
+    <p>made with <span class="material-icons">favorite_border</span> by Rayan Tanzim</p>
+</section>
+
+<!----JavaScript for Toggle Menu---->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
